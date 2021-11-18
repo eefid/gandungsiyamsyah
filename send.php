@@ -10,11 +10,11 @@ if($_POST['kirim']){
 	$pengirim	= 'Dari: '.$nama.' <'.$email.'>';
 	
 	if(mail($admin, $judul, $pesan, $pengirim)){
-		echo 'SUCCESS: Pesan anda berhasil di kirim. <a href="index.php">Kembali</a>';
+		echo 'SUCCESS: Pesan anda berhasil di kirim. <a href="index.html">Kembali</a>';
 	}else{
-		echo 'ERROR: Pesan anda gagal di kirim silahkan coba lagi. <a href="index.php">Kembali</a>';
+		echo 'ERROR: Pesan anda gagal di kirim silahkan coba lagi. <a href="index.html">Kembali</a>';
 	}
 }else{
-	header("Location: index.php");
+	header("Location: index.html");
 }
 ?>
