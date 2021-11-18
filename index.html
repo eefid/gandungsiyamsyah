@@ -323,42 +323,13 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="kirim.php" method="POST">
-                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="subject" placeholder="Subject" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
+                    <form action="kirim.php" method="post">
+		<p><input type="text" name="nama" placeholder="Nama anda" size="30" required /></p>
+		<p><input type="email" name="email" placeholder="Email valid" size="30" required /></p>
+		<p><input type="text" name="judul" placeholder="Subjek pesan email" size="50" required /></p>
+		<p><textarea name="pesan" placeholder="Pesan anda" rows="7" cols="50" required></textarea>
+		<p><input type="submit" name="kirim" value="Kirim Pesan" /> <input type="reset" value="Hapus Text" /></p>
+	</form>
                   </div>
                 </div>
                 <div class="col-md-6">
